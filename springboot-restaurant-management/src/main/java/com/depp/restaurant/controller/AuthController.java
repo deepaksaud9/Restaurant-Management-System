@@ -7,7 +7,7 @@ import com.depp.restaurant.dtos.SignupRequest;
 import com.depp.restaurant.dtos.UserDto;
 import com.depp.restaurant.entity.User;
 import com.depp.restaurant.repository.UserRepository;
-import com.depp.restaurant.service.AuthService;
+import com.depp.restaurant.service.serviceImpl.AuthService;
 import com.depp.restaurant.service.jwt.UserDetailServiceImpl;
 import com.depp.restaurant.utils.JwtUtils;
 import jakarta.servlet.http.HttpServletResponse;

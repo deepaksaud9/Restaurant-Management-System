@@ -1,4 +1,4 @@
-package com.depp.restaurant.service;
+package com.depp.restaurant.service.serviceImpl;
 
 import com.depp.restaurant.dtos.SignupRequest;
 import com.depp.restaurant.dtos.UserDto;
