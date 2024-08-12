@@ -7,9 +7,8 @@ import com.depp.restaurant.dtos.SignupRequest;
 import com.depp.restaurant.dtos.UserDto;
 import com.depp.restaurant.entity.User;
 import com.depp.restaurant.repository.UserRepository;
-import com.depp.restaurant.service.AuthService;
-import com.depp.restaurant.service.jwt.UserDetailServiceImpl;
-import com.depp.restaurant.utils.JwtUtils;
+import com.depp.restaurant.service.auth.AuthService;
+import com.depp.restaurant.service.jwt.utils.JwtUtils;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +17,7 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,14 +32,14 @@ public class AuthController {
 
     private final AuthService authService;
     private final AuthenticationManager authenticationManager;
-    private final UserDetailServiceImpl userDetailService;
+    private final UserDetailsService userDetailService;
     private final UserRepository userRepository;
     private final JwtUtils jwtUtils;
 
-    public AuthController(AuthService authService, AuthenticationManager authenticationManager, UserDetailServiceImpl userDetailService, UserRepository userRepository, JwtUtils jwtUtils){
+    public AuthController(AuthService authService, AuthenticationManager authenticationManager, UserDetailsService userService, UserRepository userRepository, JwtUtils jwtUtils){
         this.authService = authService;
         this.authenticationManager = authenticationManager;
-        this.userDetailService = userDetailService;
+        this.userDetailService = userService;
         this.userRepository = userRepository;
         this.jwtUtils = jwtUtils;
     }
@@ -62,7 +62,7 @@ public class AuthController {
             return null;
         }
            final UserDetails userDetails = userDetailService.loadUserByUsername(authenticationRequest.getEmail());
-            final String jwt = jwtUtils.generateToken(userDetails.getUsername());
+            final String jwt = jwtUtils.generateToken(userDetails);
             Optional<User>  optionalUser = userRepository.findUserByEmail(userDetails.getUsername());
             AuthenticationResponse authenticationResponse = new AuthenticationResponse();
             if (optionalUser.isPresent()){

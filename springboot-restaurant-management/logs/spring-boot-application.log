@@ -1,30 +1,74 @@
-2024-08-11 01:18:26 [main] INFO  c.d.r.SpringbootRestaurantManagementApplication - Starting SpringbootRestaurantManagementApplication using Java 19.0.1 with PID 15016 (E:\JAVA\Java-Projects\Java-FullStack\Restaurant management\springboot-restaurant-management\target\classes started by Dell in E:\JAVA\Java-Projects\Java-FullStack\Restaurant management\springboot-restaurant-management)
-2024-08-11 01:18:26 [main] DEBUG c.d.r.SpringbootRestaurantManagementApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
-2024-08-11 01:18:26 [main] INFO  c.d.r.SpringbootRestaurantManagementApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-11 01:18:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-11 01:18:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
-2024-08-11 01:18:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
-2024-08-11 01:18:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2024-08-11 01:18:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-11 01:18:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-11 01:18:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-11 01:18:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1818 ms
-2024-08-11 01:18:28 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-11 01:18:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-11 01:18:28 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-11 01:18:29 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-11 01:18:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-11 01:18:29 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cbfdf5c
-2024-08-11 01:18:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-11 01:18:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-11 01:18:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-11 01:18:31 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
-2024-08-11 01:18:31 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-11 01:18:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2024-08-11 01:18:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
-2024-08-11 01:18:32 [main] INFO  c.d.r.SpringbootRestaurantManagementApplication - Started SpringbootRestaurantManagementApplication in 6.589 seconds (process running for 10.123)
-2024-08-11 01:18:35 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-11 02:11:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m13s51ms396µs600ns).
-2024-08-11 03:23:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-11 03:23:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-11 03:23:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-12 02:37:52 [main] INFO  c.d.r.SpringbootRestaurantManagementApplication - Starting SpringbootRestaurantManagementApplication using Java 19.0.1 with PID 13264 (E:\JAVA\Java-Projects\Java-FullStack\Restaurant management\springboot-restaurant-management\target\classes started by Dell in E:\JAVA\Java-Projects\Java-FullStack\Restaurant management\springboot-restaurant-management)
+2024-08-12 02:37:52 [main] DEBUG c.d.r.SpringbootRestaurantManagementApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-12 02:37:52 [main] INFO  c.d.r.SpringbootRestaurantManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-12 02:37:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 02:37:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-08-12 02:37:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2024-08-12 02:37:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-08-12 02:37:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-12 02:37:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-12 02:37:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-12 02:37:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1897 ms
+2024-08-12 02:37:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 02:37:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-12 02:37:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-12 02:37:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 02:37:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-12 02:37:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35e689a0
+2024-08-12 02:37:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-12 02:37:56 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 02:37:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 02:37:56 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
+2024-08-12 02:37:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 02:37:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-08-12 02:37:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2024-08-12 02:37:57 [main] INFO  c.d.r.SpringbootRestaurantManagementApplication - Started SpringbootRestaurantManagementApplication in 5.836 seconds (process running for 7.542)
+2024-08-12 04:30:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 04:30:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-12 04:30:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-12 04:30:53 [main] INFO  c.d.r.SpringbootRestaurantManagementApplication - Starting SpringbootRestaurantManagementApplication using Java 19.0.1 with PID 7580 (E:\JAVA\Java-Projects\Java-FullStack\Restaurant management\springboot-restaurant-management\target\classes started by Dell in E:\JAVA\Java-Projects\Java-FullStack\Restaurant management\springboot-restaurant-management)
+2024-08-12 04:30:53 [main] DEBUG c.d.r.SpringbootRestaurantManagementApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-12 04:30:53 [main] INFO  c.d.r.SpringbootRestaurantManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-12 04:30:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 04:30:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2024-08-12 04:30:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2024-08-12 04:30:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-08-12 04:30:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-12 04:30:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-12 04:30:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-12 04:30:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2115 ms
+2024-08-12 04:30:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 04:30:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-12 04:30:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-12 04:30:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 04:30:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-12 04:30:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4348fa35
+2024-08-12 04:30:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-12 04:30:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 04:30:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 04:30:58 [main] DEBUG c.d.r.s.jwt.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2024-08-12 04:30:58 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-08-12 04:30:58 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-12 04:30:58 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [E:\JAVA\Java-Projects\Java-FullStack\Restaurant management\springboot-restaurant-management\target\classes\com\depp\restaurant\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'com.depp.restaurant.service.jwt.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-08-12 04:30:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 04:30:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-12 04:30:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-12 04:30:58 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-08-12 04:30:58 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-12 04:30:58 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.depp.restaurant.controller.AuthController required a bean of type 'com.depp.restaurant.service.jwt.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.depp.restaurant.service.jwt.UserDetailsService' in your configuration.
+

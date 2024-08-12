@@ -1,4 +1,4 @@
-package com.depp.restaurant.service.serviceImpl;
+package com.depp.restaurant.service.auth;
 
 import com.depp.restaurant.dtos.SignupRequest;
 import com.depp.restaurant.dtos.UserDto;
@@ -6,9 +6,7 @@ import com.depp.restaurant.entity.User;
 import com.depp.restaurant.enums.UserRole;
 import com.depp.restaurant.mapper.UserMapper;
 import com.depp.restaurant.repository.UserRepository;
-import com.depp.restaurant.service.AuthService;
 import jakarta.annotation.PostConstruct;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
