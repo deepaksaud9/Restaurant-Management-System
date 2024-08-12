@@ -3,7 +3,7 @@
         <div nz-row class="imgDiv">
             <h2 style="margin-left: 200px;">Add Category</h2>
         </div>
-        <form nz-form>
+        <form nz-form [formGroup]="categoryForm">
             <div nz-row>
                 <div nz-col [nzMd]="24" [nzSm]="24" [nzXs]="24">
                     <div class="profile-badge">
@@ -19,19 +19,19 @@
                 <div nz-col nzSpan="24" style="margin-top: 20px;">
                     <nz-form-item>
                         <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
-                        <input nz-input placeholder="Name" />
+                            <input nz-input placeholder="Name" formControlName="name" />
                         </nz-form-control>
                     </nz-form-item>
                 </div>
                 <div nz-col nzSpan="24">
                     <nz-form-item>
                         <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
-                            <textarea rows="1" nz-input placeholder="Description"></textarea>
+                            <textarea rows="1" nz-input placeholder="Description" formControlName="description"></textarea>
                         </nz-form-control>
                     </nz-form-item>
                 </div>
             </div>
-            <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Add</button>
+            <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" (click)="postCategory()">Post</button>
         </form>
     </div>
 </div>
